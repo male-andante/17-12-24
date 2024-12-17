@@ -1,6 +1,4 @@
 /*
-ESERCIZIO 8) Crea un selettore per selezionare l'autore del secondo blog post
-ESERCIZIO 9) Crea un selettore per selezionare il secondo <li> della lista del terzo blog post
 ESERCIZIO 10) Crea un selettore per selezionare il link "Torna su" che trovi a fondo pagina nell'angolo in basso a destra
 ESERCIZIO 11) Crea un selettore per selezionare il bottone "Nuovi" che trovi in basso
 ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer
@@ -45,5 +43,18 @@ nav span:nth-of-type(even) {        /* DONE */
 }
 
 /* ESERCIZIO 7) Crea un selettore per selezionare tutti gli <li> della prima "ordered-list" della sidebar ("Archivio") */
+
+aside div.p-4:nth-of-type(2) li {
+    background-color:yellowgreen;   /* DONE */
+}
+
+/* ESERCIZIO 8) Crea un selettore per selezionare l'autore del secondo blog post */
+
+div.blog-post:nth-of-type(2) p.blog-post-meta a {       /* DONE */
+    color: violet;
+}
+
+/* ESERCIZIO 9) Crea un selettore per selezionare il secondo <li> della lista del terzo blog post */
+
 
 
