@@ -1,10 +1,3 @@
-/*
-ESERCIZIO 10) Crea un selettore per selezionare il link "Torna su" che trovi a fondo pagina nell'angolo in basso a destra
-ESERCIZIO 11) Crea un selettore per selezionare il bottone "Nuovi" che trovi in basso
-ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer
-*/
-
-
 /* ESERCIZIO 1) Crea un selettore per selezionare l'<h1> nella sezione "hero", ovvero nel jumbotron */
 
 .jumbotron.p-4.p-md-5.rounded h1 {   /* DONE */
@@ -56,5 +49,26 @@ div.blog-post:nth-of-type(2) p.blog-post-meta a {       /* DONE */
 
 /* ESERCIZIO 9) Crea un selettore per selezionare il secondo <li> della lista del terzo blog post */
 
+div.blog-post:nth-of-type(3) li:nth-of-type(2) {    /* DONE */
+    color:rebeccapurple;
+}
 
+/* ESERCIZIO 10) Crea un selettore per selezionare il link "Torna su" che trovi a fondo pagina nell'angolo in basso a destra */
 
+a.float-right.mb-3.mr-3 {
+    border: 2px solid rebeccapurple;        /* DONE */
+    border-radius: 50%;
+    padding: 1em;
+}
+
+/* ESERCIZIO 11) Crea un selettore per selezionare il bottone "Nuovi" che trovi in basso */
+
+nav.blog-pagination a.btn-outline-secondary {       /* DONE */
+    margin-left: 1.5em;
+}
+
+/* ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer */
+
+footer a:nth-of-type(2) {
+    color: rebeccapurple;
+}
