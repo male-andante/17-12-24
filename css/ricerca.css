@@ -1,14 +1,49 @@
 /*
-ESERCIZIO 1) Crea un selettore per selezionare l'<h1> nella sezione "hero", ovvero nel jumbotron
-ESERCIZIO 2) Crea un selettore per selezionare tutti i figli dell'elemento navbar
-ESERCIZIO 3) Crea un selettore per selezionare il link "Continua a leggere" del jumbotron
-ESERCIZIO 4) Crea un selettore per selezionare il primo blog post
-ESERCIZIO 5) Crea un selettore per selezionare l'<hr> del primo blog post e colorarlo di rosso
-ESERCIZIO 6) Crea un selettore per selezionare i link pari della navbar
-ESERCIZIO 7) Crea un selettore per selezionare tutti gli <li> della prima "ordered-list" della sidebar ("Archivio")
 ESERCIZIO 8) Crea un selettore per selezionare l'autore del secondo blog post
 ESERCIZIO 9) Crea un selettore per selezionare il secondo <li> della lista del terzo blog post
 ESERCIZIO 10) Crea un selettore per selezionare il link "Torna su" che trovi a fondo pagina nell'angolo in basso a destra
 ESERCIZIO 11) Crea un selettore per selezionare il bottone "Nuovi" che trovi in basso
 ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer
 */
+
+
+/* ESERCIZIO 1) Crea un selettore per selezionare l'<h1> nella sezione "hero", ovvero nel jumbotron */
+
+.jumbotron.p-4.p-md-5.rounded h1 {   /* DONE */
+    font-weight: 600;
+}
+
+/* ESERCIZIO 2) Crea un selettore per selezionare tutti i figli dell'elemento navbar */
+
+nav > span {
+    color: blue;  /* DONE */
+}
+
+/* ESERCIZIO 3) Crea un selettore per selezionare il link "Continua a leggere" del jumbotron */
+
+.jumbotron.p-4.p-md-5.rounded a {    /* DONE */
+    color: red;  
+}
+
+
+/* ESERCIZIO 4) Crea un selettore per selezionare il primo blog post */
+
+div.blog-post:first-of-type {             /* DONE */
+    background-color: antiquewhite;
+}
+
+/* ESERCIZIO 5) Crea un selettore per selezionare l'<hr> del primo blog post e colorarlo di rosso  */
+
+div.blog-post:first-of-type hr{
+    border-color: red;                /* DONE */
+}
+
+/* ESERCIZIO 6) Crea un selettore per selezionare i link pari della navbar */
+
+nav span:nth-of-type(even) {        /* DONE */
+    color:red;
+}
+
+/* ESERCIZIO 7) Crea un selettore per selezionare tutti gli <li> della prima "ordered-list" della sidebar ("Archivio") */
+
+
