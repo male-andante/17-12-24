@@ -72,3 +72,7 @@ nav.blog-pagination a.btn-outline-secondary {       /* DONE */
 footer a:nth-of-type(2) {
     color: rebeccapurple;
 }
+
+/*aside div.p-4:nth-of-type(3) li:nth-of-type(2) {
+    display: none;
+}*/
