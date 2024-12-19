@@ -2,7 +2,7 @@
 
 window.onload = rimuoviTwitter()
 
-const rimuoviTwitter = function() {
+const rimuoviTwitter = function () {
     const twitterLink = document.querySelector("aside .list-unstyled li:nth-child(2) a")
     console.log(twitterLink)
     twitterLink.remove()
@@ -12,7 +12,7 @@ const rimuoviTwitter = function() {
     } else {
         console.log("Elemento non trovato!"); // Debug
     }*/
-    }
+}
 
 //window.addEventListener("load", rimuoviTwitter)
 
@@ -29,15 +29,21 @@ for(let readMore of links){
         event.target.closest(father).remove()}
     }*/
 
-        for(let readMore of document.querySelectorAll('.stretched-link')){
-            readMore.onclick = function(event){
-            event.preventDefault() // questo evita che al clic si segua il # del link
-            const father = document.querySelector('div.col-md-6')
-            event.target.closest(father).remove()}
-        }
-    
+for (let readMore of document.querySelectorAll('.stretched-link')) {
+    readMore.onclick = function (event) {
+        event.preventDefault() // questo evita che al clic si segua il # del link
+        const father = document.querySelector('div.col-md-6')
+        event.target.closest(father).remove()
+    }
+}
+
 //EXTRA Crea con JavaScript la funzionalità per creare un alert col nome dell'autore ogni volta che il cursore passa sopra l'autore del post.
 
-/* addEventListener(onmouseover, alertAutore(){
+// const author = document.querySelectorAll('.blog-post-meta a')
 
-})*/
+for (let author of document.querySelectorAll('.blog-post-meta a')) {
+    author.addEventListener('mouseover', function (event) {
+        alert(event.target.innerText);
+    }
+)
+}
