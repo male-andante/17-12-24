@@ -39,7 +39,6 @@ for (let readMore of document.querySelectorAll('.stretched-link')) {
 
 //EXTRA Crea con JavaScript la funzionalità per creare un alert col nome dell'autore ogni volta che il cursore passa sopra l'autore del post.
 
-// const author = document.querySelectorAll('.blog-post-meta a')
 
 for (let author of document.querySelectorAll('.blog-post-meta a')) {
     author.addEventListener('mouseover', function (event) {
