@@ -3,7 +3,7 @@
 window.onload = rimuoviTwitter()
 
 const rimuoviTwitter = function () {
-    const twitterLink = document.querySelector("aside .list-unstyled li:nth-child(2) a")
+    const twitterLink = document.querySelector("aside div.p-4:nth-of-type(3) li:nth-of-type(2)")
     console.log(twitterLink)
     twitterLink.remove()
     /*if (twitterLink) {
